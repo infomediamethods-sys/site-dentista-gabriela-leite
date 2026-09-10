@@ -373,34 +373,130 @@
     .footer-grid{grid-template-columns:1fr 1fr;}
   }
   @media (max-width:767px){
+    html,body{width:100%;max-width:100%;overflow-x:hidden;}
     body{font-size:16px;}
-    .topbar .container{font-size:12px;}
-    .topbar-address{display:none;}
-    .hero{min-height:auto;padding:140px 0 60px;}
-    .hero h1{font-size:38px;}
-    .hero-support{font-size:16px;}
-    .section-title{font-size:32px;}
-    .container{padding:0 20px;}
-    section{padding:64px 0;}
-    section.support{padding:64px 0;}
-    .feature-grid,.treat-grid,.process-grid,.location-wrap{grid-template-columns:1fr;}
-    .location-map{min-height:260px;}
+    .container{width:100%;max-width:100%;padding:0 clamp(18px,5.2vw,24px);}
+    #siteHeader{max-width:100vw;}
+    .topbar .container{justify-content:center;padding:10px 20px 8px;font-size:11px;}
+    .topbar-social{width:100%;justify-content:center;gap:8px;min-width:0;}
+    .topbar-social span{color:rgba(255,255,255,.76);}
+    .topbar-contact{display:none;}
+    .navwrap{padding:12px 16px 0;}
+    #siteHeader.stuck .navwrap{padding-top:8px;}
+    .navbar{
+      width:100%;max-width:calc(100vw - 32px);gap:8px;border-radius:30px;
+      padding:8px 8px 8px 14px;
+    }
+    .logo{
+      min-width:0;max-width:calc(100% - 50px);gap:8px;font-size:15px;
+      line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    }
+    .logo-mark{width:36px;height:36px;}
+    .hamburger{width:40px;height:40px;flex:0 0 40px;}
+    .mobile-menu{width:min(360px,92vw);padding:24px 22px;}
+    .mobile-menu a{font-size:20px;line-height:1.2;}
+    .mobile-menu .btn{width:100%;}
+    .menu-close{width:40px;height:40px;}
+    .hero{
+      min-height:auto;padding:132px 0 48px;align-items:flex-start;
+    }
+    .hero-bg img{object-position:58% center;}
+    .hero-overlay{background:linear-gradient(180deg,rgba(75,44,44,.74),rgba(75,44,44,.66) 45%,rgba(75,44,44,.72));}
+    .hero .container{grid-template-columns:minmax(0,1fr);gap:26px;}
+    .hero-content,.contact-card{min-width:0;width:100%;max-width:100%;}
+    .hero-eyebrow,.eyebrow{
+      max-width:100%;white-space:normal;font-size:10.5px;line-height:1.45;
+      letter-spacing:.12em;padding:7px 14px;
+    }
+    .hero-eyebrow{margin-bottom:20px;}
+    .hero h1{
+      font-size:clamp(32px,9.2vw,38px);line-height:1.08;margin-bottom:18px;
+      max-width:11ch;text-wrap:balance;
+    }
+    .hero-support{
+      font-size:15.5px;line-height:1.72;max-width:31ch;margin-bottom:24px;
+      color:rgba(255,255,255,.86);
+    }
+    .hero-benefits{flex-direction:column;gap:12px;margin-bottom:28px;}
+    .hero-benefit{align-items:flex-start;font-size:14.5px;line-height:1.45;}
+    .hero-actions{display:grid;grid-template-columns:1fr;gap:12px;width:100%;}
+    .btn{
+      min-height:52px;width:auto;max-width:100%;justify-content:center;gap:10px;
+      padding:10px 14px 10px 18px;white-space:normal;text-align:center;
+    }
+    .btn-disc{width:34px;height:34px;flex:0 0 34px;}
+    .contact-card{border-radius:28px;padding:24px 20px;}
+    .contact-card .eyebrow{margin-bottom:14px;}
+    .contact-card-row{font-size:14.5px;line-height:1.55;margin-bottom:14px;}
+    .contact-card-row span,.location-row span,.topbar-item{min-width:0;overflow-wrap:anywhere;}
+    .hero-actions .btn,.contact-card .btn-primary,.location-actions .btn,.pro-info .btn,.cta-final .btn{width:100%;}
+    .marquee-wrap{padding:18px 0;}
+    .marquee-item{gap:22px;padding:0 22px;font-size:14px;}
+    section{padding:58px 0;}
+    section.support{padding:58px 0;}
+    .section-head{margin-bottom:30px;}
+    .section-head.center{text-align:left;}
+    .section-head.center .section-lead{margin-left:0;margin-right:0;}
+    .section-title{font-size:clamp(28px,8vw,32px);line-height:1.12;margin-bottom:12px;text-wrap:balance;}
+    .section-lead{font-size:15.5px;line-height:1.7;max-width:32ch;margin-bottom:0;}
+    .feature-grid,.treat-grid,.process-grid,.location-wrap{grid-template-columns:minmax(0,1fr);gap:16px;}
+    .feature-card{border-radius:26px;padding:24px 20px;}
+    .feature-icon{width:48px;height:48px;margin-bottom:18px;}
+    .feature-card h3{font-size:19px;}
+    .feature-card p{font-size:14.5px;line-height:1.62;}
+    .treat-card{border-radius:28px 28px 28px 0;}
+    .treat-media{aspect-ratio:4/3;}
+    .treat-body{padding:22px 20px 24px;}
+    .treat-icon{width:40px;height:40px;margin-bottom:16px;}
+    .treat-card h3{font-size:20px;line-height:1.25;}
+    .treat-card p{font-size:14.5px;line-height:1.62;margin-bottom:20px;}
+    .about-grid,.pro-grid{gap:30px;}
+    .about-media{margin:0 auto 22px;max-width:min(100%,320px);width:100%;}
+    .pro-media{margin:0 auto 22px;max-width:min(100%,320px);width:100%;}
+    .about-media img,.pro-media img{border-radius:30px 30px 30px 0;}
+    .stat-badge{position:static;margin:-36px 0 0 18px;display:inline-block;border-radius:20px;padding:18px 22px;}
+    .stat-badge .num{font-size:30px;}
+    .about-text p{font-size:15.5px;line-height:1.72;}
+    .about-text blockquote{font-size:18px;line-height:1.45;margin:24px 0;padding-left:16px;}
+    .pro-info h3{font-size:28px;}
+    .pro-cro{font-size:12px;margin-bottom:20px;}
+    .pro-list{gap:14px;margin-bottom:26px;}
+    .pro-list li{font-size:14.5px;line-height:1.58;}
+    .process-grid{row-gap:20px;}
+    .process-step{
+      display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:14px;
+      align-items:start;text-align:left;
+    }
+    .process-num{width:44px;height:44px;margin:0;grid-row:1 / span 2;font-size:17px;}
+    .process-step h3{font-size:17px;margin-bottom:5px;}
+    .process-step p{font-size:14px;}
+    .test-card{border-radius:26px;padding:24px 20px;}
+    .test-card p{font-size:15px;line-height:1.58;margin-bottom:20px;}
+    .test-source{text-align:left;margin-top:28px;}
+    .location-info{gap:16px;}
+    .location-info p{font-size:15px;line-height:1.65;max-width:32ch;}
+    .location-actions{display:grid;grid-template-columns:1fr;gap:12px;width:100%;}
+    .location-map{min-height:260px;border-radius:26px 26px 26px 0;}
     .location-map iframe{min-height:260px;}
-    .footer-grid{grid-template-columns:1fr;gap:36px;}
-    .hero-actions .btn,.contact-card .btn-primary{width:100%;justify-content:center;}
-    .stat-badge{position:static;margin-top:-40px;margin-left:20px;display:inline-block;}
-    .about-media{margin-bottom:56px;max-width:300px;width:100%;}
-    .pro-media{margin-bottom:56px;max-width:300px;width:100%;}
-    .cta-final h2{font-size:30px;}
-    .float-whatsapp{width:52px;height:52px;bottom:20px;right:20px;}
+    .faq-q{align-items:flex-start;gap:12px;padding:20px 0;font-size:16px;line-height:1.38;}
+    .faq-icon{width:30px;height:30px;margin-left:0;}
+    .faq-a p{font-size:14.5px;line-height:1.65;padding-bottom:20px;}
+    .cta-final h2{font-size:29px;line-height:1.16;}
+    .cta-final p{font-size:15px;line-height:1.5;margin-bottom:26px;}
+    footer{padding:56px 0 28px;}
+    .footer-grid{grid-template-columns:1fr;gap:30px;margin-bottom:40px;}
+    .footer-logo{font-size:17px;line-height:1.25;}
+    .footer-brand p{max-width:32ch;}
+    .footer-bottom{flex-direction:column;gap:8px;}
+    .float-whatsapp{width:52px;height:52px;bottom:18px;right:18px;}
   }
 </style>
 </head>
 <body>
 
 <div class="scrim" id="scrim"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <div class="menu-close" id="menuClose">✕</div>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+  <button class="menu-close" id="menuClose" type="button" aria-label="Fechar menu">✕</button>
   <a href="#hero">Início</a>
   <a href="#sobre">Sobre</a>
   <a href="#tratamentos">Tratamentos</a>
@@ -449,7 +545,7 @@
         <a href="https://wa.me/554830263005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">
           Agendar consulta <span class="btn-disc">↗</span>
         </a>
-        <div class="hamburger" id="hamburger"><span></span></div>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false"><span></span></button>
       </div>
     </div>
   </div>
@@ -872,8 +968,20 @@
   var mobileMenu = document.getElementById('mobileMenu');
   var menuClose = document.getElementById('menuClose');
   var scrim = document.getElementById('scrim');
-  function openMenu(){ mobileMenu.classList.add('open'); scrim.classList.add('open'); }
-  function closeMenu(){ mobileMenu.classList.remove('open'); scrim.classList.remove('open'); }
+  function openMenu(){
+    mobileMenu.classList.add('open');
+    mobileMenu.setAttribute('aria-hidden','false');
+    mobileMenu.removeAttribute('inert');
+    hamburger.setAttribute('aria-expanded','true');
+    scrim.classList.add('open');
+  }
+  function closeMenu(){
+    mobileMenu.classList.remove('open');
+    mobileMenu.setAttribute('aria-hidden','true');
+    mobileMenu.setAttribute('inert','');
+    hamburger.setAttribute('aria-expanded','false');
+    scrim.classList.remove('open');
+  }
   hamburger.addEventListener('click', openMenu);
   menuClose.addEventListener('click', closeMenu);
   scrim.addEventListener('click', closeMenu);
