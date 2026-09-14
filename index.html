@@ -327,13 +327,13 @@
 
   /* Floating WhatsApp */
   .float-whatsapp{
-    position:fixed;bottom:28px;right:28px;width:60px;height:60px;border-radius:50%;background:var(--menta);
-    color:var(--marinho-profundo);display:flex;align-items:center;justify-content:center;z-index:400;
-    box-shadow:0 8px 24px rgba(75,44,44,.24);
+    position:fixed;bottom:28px;right:28px;width:60px;height:60px;border-radius:50%;background:transparent;
+    color:var(--menta);border:2px solid var(--menta);display:flex;align-items:center;justify-content:center;z-index:400;
+    box-shadow:0 8px 24px rgba(75,44,44,.16);
   }
   .float-whatsapp svg{width:28px;height:28px;}
   .float-whatsapp::before{
-    content:'';position:absolute;inset:0;border-radius:50%;background:var(--menta);
+    content:'';position:absolute;inset:-2px;border-radius:50%;border:2px solid var(--menta);background:transparent;
     animation:pulse 2.4s var(--ease) infinite;z-index:-1;
   }
   @keyframes pulse{0%{transform:scale(1);opacity:.55;}100%{transform:scale(1.9);opacity:0;}}
