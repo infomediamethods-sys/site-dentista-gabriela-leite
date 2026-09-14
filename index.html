@@ -58,29 +58,13 @@
 
   /* Botões */
   .btn{
-    display:inline-flex;align-items:center;gap:14px;padding:10px 18px 10px 24px;border-radius:50px;
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:50px;
     font:500 16px/1.4 'Roboto',sans-serif;transition:all .25s var(--ease);white-space:nowrap;
   }
   .btn-primary{background:var(--menta);color:var(--marinho-profundo);}
   .btn-primary:hover{background:var(--marinho);color:#FFFFFF;}
   .btn-secondary{background:#FFFFFF;color:var(--marinho);border:1px solid var(--borda-clara);}
   .btn-secondary:hover{background:var(--marinho);color:#FFFFFF;border-color:var(--marinho);}
-  .btn-disc{
-    width:32px;height:32px;border-radius:50%;background:#FFFFFF;color:var(--marinho);
-    display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;
-    position:relative;transition:transform .25s var(--ease);
-  }
-  .btn-disc{font-size:0;}
-  .btn-disc::before,.btn-disc::after{content:'';position:absolute;display:block;background:currentColor;}
-  .btn-disc::before{
-    width:9px;height:9px;right:10px;top:9px;background:transparent;
-    border-top:2px solid currentColor;border-right:2px solid currentColor;border-radius:1px;
-  }
-  .btn-disc::after{width:14px;height:2px;left:10px;top:17px;border-radius:2px;transform:rotate(-45deg);}
-  .btn:hover .btn-disc{transform:rotate(45deg);}
-  .btn-primary .btn-disc{background:#FFFFFF;color:var(--marinho);}
-  .btn-primary:hover .btn-disc{background:var(--marinho);color:#FFFFFF;}
-  .btn-secondary:hover .btn-disc{background:#FFFFFF;color:var(--marinho);}
 
   /* Topbar + Navbar */
   #siteHeader{position:fixed;top:0;left:0;right:0;z-index:500;}
@@ -171,8 +155,6 @@
   .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
   .hero-actions .btn-secondary{background:rgba(255,255,255,.08);color:#FFFFFF;border-color:rgba(255,255,255,.28);}
   .hero-actions .btn-secondary:hover{background:var(--menta);color:var(--marinho-profundo);border-color:var(--menta);}
-  .hero-actions .btn-secondary:hover .btn-disc{background:var(--marinho);color:#FFFFFF;}
-  .hero-actions .btn-secondary .btn-disc{background:rgba(255,255,255,.18);color:#FFFFFF;}
 
   .contact-card{
     background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-radius:32px;padding:32px;
@@ -236,8 +218,6 @@
   .treat-card:hover p{color:rgba(255,255,255,.75);}
   .treat-link{display:inline-flex;align-items:center;gap:8px;font:500 15px/1 'Roboto',sans-serif;color:var(--marinho);transition:color .25s var(--ease);}
   .treat-card:hover .treat-link{color:var(--menta);}
-  .treat-link .arrow{transition:transform .25s var(--ease);}
-  .treat-card:hover .treat-link .arrow{transform:translateX(4px);}
 
   /* Sobre */
   .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:center;}
@@ -444,9 +424,8 @@
     .hero-actions{display:grid;grid-template-columns:1fr;gap:12px;width:100%;}
     .btn{
       min-height:52px;width:auto;max-width:100%;justify-content:center;gap:10px;
-      padding:10px 14px 10px 18px;white-space:normal;text-align:center;
+      padding:12px 18px;white-space:normal;text-align:center;
     }
-    .btn-disc{width:34px;height:34px;flex:0 0 34px;}
     .contact-card{
       background:rgba(255,245,245,.96);border-radius:28px;padding:24px 20px;
       box-shadow:0 20px 50px rgba(75,44,44,.16);
@@ -537,7 +516,7 @@
   <a href="#tratamentos">Tratamentos</a>
   <a href="#profissional">Profissional</a>
   <a href="#contato">Contato</a>
-  <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
+  <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta</a>
 </div>
 
 <header id="siteHeader">
@@ -578,7 +557,7 @@
       </div>
       <div class="nav-actions">
         <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">
-          Agendar consulta <span class="btn-disc" aria-hidden="true"></span>
+          Agendar consulta
         </a>
         <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false"><span></span></button>
       </div>
@@ -606,8 +585,8 @@
           <span class="hero-benefit"><span class="check">✓</span> Nota 4,9 <span class="rating-stars" aria-label="4,9 de 5 estrelas" title="4,9 de 5 estrelas"><span class="star full" aria-hidden="true"></span><span class="star full" aria-hidden="true"></span><span class="star full" aria-hidden="true"></span><span class="star full" aria-hidden="true"></span><span class="star partial" aria-hidden="true"></span></span></span>
         </div>
         <div class="hero-actions">
-          <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
-          <a href="https://wa.me/554832363005" class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp <span class="btn-disc" aria-hidden="true"></span></a>
+          <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta</a>
+          <a href="https://wa.me/554832363005" class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
       </div>
       <div class="contact-card reveal">
@@ -620,7 +599,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span>(48) 3236-3005 · WhatsApp</span>
         </div>
-        <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
+        <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta</a>
       </div>
     </div>
   </section>
@@ -689,7 +668,7 @@
             <span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg></span>
             <h3>Ortodontia com Invisalign</h3>
             <p>Alinhadores invisíveis e correção de apinhamento dentário com planejamento digital.</p>
-            <span class="treat-link">Ver detalhes <span class="arrow">→</span></span>
+            <span class="treat-link">Ver detalhes</span>
           </div>
         </a>
         <a class="treat-card reveal" href="https://wa.me/554832363005?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Harmoniza%C3%A7%C3%A3o%20Facial%20na%20Cl%C3%ADnica%20Gabriela%20Leite." target="_blank" rel="noopener" aria-label="Saber mais sobre Harmonização Facial pelo WhatsApp">
@@ -701,7 +680,7 @@
             <span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 13.5 9 19.5 10.5 13.5 12 12 18 10.5 12 4.5 10.5 10.5 9 Z"></path></svg></span>
             <h3>Harmonização Facial</h3>
             <p>Procedimentos de harmonização facial conduzidos junto ao plano odontológico.</p>
-            <span class="treat-link">Ver detalhes <span class="arrow">→</span></span>
+            <span class="treat-link">Ver detalhes</span>
           </div>
         </a>
         <a class="treat-card reveal" href="https://wa.me/554832363005?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Implantodontia%20na%20Cl%C3%ADnica%20Gabriela%20Leite." target="_blank" rel="noopener" aria-label="Saber mais sobre Implantodontia pelo WhatsApp">
@@ -713,7 +692,7 @@
             <span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-2.2 0-4 1.6-4 4.3 0 1.9.5 3.1 1.1 5 .5 1.6.9 4.3 1.1 6.1.1.8.8 1.3 1.4.8.6-.4.9-1.2 1.2-2.1.3.9.6 1.7 1.2 2.1.6.5 1.3 0 1.4-.8.2-1.8.6-4.5 1.1-6.1.6-1.9 1.1-3.1 1.1-5C16 5.6 14.2 4 12 4Z"></path><line x1="12" y1="11" x2="12" y2="16"></line></svg></span>
             <h3>Implantodontia</h3>
             <p>Reposição de dentes com planejamento cuidadoso e acompanhamento próximo.</p>
-            <span class="treat-link">Ver detalhes <span class="arrow">→</span></span>
+            <span class="treat-link">Ver detalhes</span>
           </div>
         </a>
         <a class="treat-card reveal" href="https://wa.me/554832363005?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Lentes%20de%20Contato%20Dental%20na%20Cl%C3%ADnica%20Gabriela%20Leite." target="_blank" rel="noopener" aria-label="Saber mais sobre Lentes de Contato Dental pelo WhatsApp">
@@ -725,7 +704,7 @@
             <span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span>
             <h3>Lentes de Contato Dental</h3>
             <p>Lentes de contato dental para harmonizar cor, forma e alinhamento do sorriso.</p>
-            <span class="treat-link">Ver detalhes <span class="arrow">→</span></span>
+            <span class="treat-link">Ver detalhes</span>
           </div>
         </a>
         <a class="treat-card reveal" href="https://wa.me/554832363005?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Odontopediatria%20na%20Cl%C3%ADnica%20Gabriela%20Leite." target="_blank" rel="noopener" aria-label="Saber mais sobre Odontopediatria pelo WhatsApp">
@@ -737,7 +716,7 @@
             <span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="4"></circle><path d="M9.5 11c-.3-2 .7-4 2.5-4s2.8 2 2.5 4"></path><circle cx="12" cy="6.3" r="1.8"></circle></svg></span>
             <h3>Odontopediatria</h3>
             <p>Atendimento odontológico pensado para crianças, com cuidado e paciência.</p>
-            <span class="treat-link">Ver detalhes <span class="arrow">→</span></span>
+            <span class="treat-link">Ver detalhes</span>
           </div>
         </a>
         <a class="treat-card reveal" href="https://wa.me/554832363005?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Cl%C3%ADnico%20Geral%20na%20Cl%C3%ADnica%20Gabriela%20Leite." target="_blank" rel="noopener" aria-label="Saber mais sobre Clínico Geral pelo WhatsApp">
@@ -749,7 +728,7 @@
             <span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span>
             <h3>Clínico Geral</h3>
             <p>Prevenção, diagnóstico e manutenção da saúde bucal no dia a dia.</p>
-            <span class="treat-link">Ver detalhes <span class="arrow">→</span></span>
+            <span class="treat-link">Ver detalhes</span>
           </div>
         </a>
       </div>
@@ -792,7 +771,7 @@
           <li><span class="check">✓</span> Top Doctor Invisalign.</li>
           <li><span class="check">✓</span> Reconhecida como Top Doctor Invisalign.</li>
         </ul>
-        <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
+        <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta</a>
       </div>
     </div>
   </section>
@@ -880,8 +859,8 @@
             </div>
           </div>
           <div class="location-actions">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Torre%20Jurer%C3%AA%20B%2C%20Rod.%20Jos%C3%A9%20Carlos%20Daux%2C%205500%2C%20Sala%20211%2C%20Saco%20Grande%2C%20Florian%C3%B3polis%20-%20SC" class="btn btn-primary" target="_blank" rel="noopener">Como chegar <span class="btn-disc" aria-hidden="true"></span></a>
-            <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp <span class="btn-disc" aria-hidden="true"></span></a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Torre%20Jurer%C3%AA%20B%2C%20Rod.%20Jos%C3%A9%20Carlos%20Daux%2C%205500%2C%20Sala%20211%2C%20Saco%20Grande%2C%20Florian%C3%B3polis%20-%20SC" class="btn btn-primary" target="_blank" rel="noopener">Como chegar</a>
+            <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp</a>
           </div>
         </div>
         <div class="location-map reveal">
@@ -920,7 +899,7 @@
     <div class="container reveal">
       <h2>Cuide do seu sorriso com quem realmente entende.</h2>
       <p>Clínica Gabriela Leite · Saco Grande, Florianópolis</p>
-      <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
+      <a href="https://wa.me/554832363005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta</a>
     </div>
   </section>
 </main>
