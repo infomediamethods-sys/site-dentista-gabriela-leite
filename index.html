@@ -14,6 +14,7 @@
     --marinho:#965959;
     --marinho-profundo:#4B2C2C;
     --verde-nevoa:#FFD3D3;
+    --dourado:#D8A85A;
     --rosa-card:#FFF5F5;
     --rosa-card-borda:rgba(150,89,89,.12);
     --neutro-claro:#DFCCCC;
@@ -155,6 +156,13 @@
   .hero-support{font:400 18px/30px 'Roboto',sans-serif;color:rgba(255,255,255,.82);max-width:520px;margin-bottom:32px;}
   .hero-benefits{display:flex;flex-wrap:wrap;gap:16px 32px;margin-bottom:40px;}
   .hero-benefit{display:flex;align-items:center;gap:10px;font:500 15px/1.4 'Roboto',sans-serif;color:#FFFFFF;}
+  .rating-stars{display:inline-flex;align-items:center;gap:2px;margin-left:2px;color:rgba(255,255,255,.38);font-size:15px;line-height:1;}
+  .rating-stars .star{position:relative;display:inline-block;width:.95em;color:rgba(255,255,255,.38);}
+  .rating-stars .star::before{content:'★';}
+  .rating-stars .star.full{color:var(--dourado);}
+  .rating-stars .star.partial::after{
+    content:'★';position:absolute;inset:0 auto 0 0;width:90%;overflow:hidden;color:var(--dourado);
+  }
   .check{
     width:22px;height:22px;border-radius:50%;background:var(--menta);color:var(--marinho-profundo);
     display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;
@@ -591,7 +599,7 @@
         <p class="hero-support">Ortodontia, implantodontia, harmonização facial e odontologia geral em um só lugar, com diagnóstico digital e atendimento humanizado da Dra. Gabriela Leite.</p>
         <div class="hero-benefits">
           <span class="hero-benefit"><span class="check">✓</span> Invisalign Doctor</span>
-          <span class="hero-benefit"><span class="check">✓</span> Nota 4,9</span>
+          <span class="hero-benefit"><span class="check">✓</span> Nota 4,9 <span class="rating-stars" aria-label="4,9 de 5 estrelas" title="4,9 de 5 estrelas"><span class="star full" aria-hidden="true"></span><span class="star full" aria-hidden="true"></span><span class="star full" aria-hidden="true"></span><span class="star full" aria-hidden="true"></span><span class="star partial" aria-hidden="true"></span></span></span>
         </div>
         <div class="hero-actions">
           <a href="https://wa.me/554830263005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
@@ -638,7 +646,7 @@
         <div class="feature-card reveal">
           <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
           <h3>Invisalign Doctor</h3>
-          <p>Credenciamento Invisalign Doctor para planejamento ortodôntico digital com alinhadores transparentes.</p>
+          <p>Reconhecimento Top Doctor Invisalign para planejamento ortodôntico digital com alinhadores transparentes.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg></div>
@@ -778,7 +786,7 @@
           <li><span class="check">✓</span> Graduada em Odontologia pela Universidade Metodista de Piracicaba (Unimep), campus Lins-SP.</li>
           <li><span class="check">✓</span> Especialista em Ortodontia pela Universidade Cruzeiro do Sul, Florianópolis-SC.</li>
           <li><span class="check">✓</span> Invisalign Doctor.</li>
-          <li><span class="check">✓</span> Planejamento ortodôntico digital com alinhadores transparentes.</li>
+          <li><span class="check">✓</span> Reconhecida como Top Doctor Invisalign.</li>
         </ul>
         <a href="https://wa.me/554830263005?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Gabriela%20Leite." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta <span class="btn-disc" aria-hidden="true"></span></a>
       </div>
