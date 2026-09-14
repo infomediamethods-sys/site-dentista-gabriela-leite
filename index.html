@@ -141,6 +141,7 @@
     overflow:hidden;
   }
   .hero-bg{position:absolute;inset:0;z-index:-2;}
+  .hero-bg picture{display:block;width:100%;height:100%;}
   .hero-bg img{width:100%;height:100%;object-fit:cover;}
   .hero-overlay{position:absolute;inset:0;z-index:-1;background:rgba(75,44,44,0.62);}
   .hero .container{display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:end;width:100%;}
@@ -409,7 +410,7 @@
     .hero{
       min-height:auto;padding:132px 0 48px;align-items:flex-start;
     }
-    .hero-bg img{object-position:58% center;}
+    .hero-bg img{object-position:center center;}
     .hero-overlay{background:linear-gradient(180deg,rgba(75,44,44,.74),rgba(75,44,44,.66) 45%,rgba(75,44,44,.72));}
     .hero .container{grid-template-columns:minmax(0,1fr);gap:26px;}
     .hero-content,.contact-card{min-width:0;width:100%;max-width:100%;}
@@ -577,7 +578,10 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=2000&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=640&q=80&auto=format&fit=crop 640w, https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=960&q=80&auto=format&fit=crop 960w, https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1400&q=80&auto=format&fit=crop 1400w, https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=2000&q=80&auto=format&fit=crop 2000w" sizes="100vw" referrerpolicy="no-referrer" alt="Sala de atendimento odontológico com cadeira e luz natural" width="2000" height="1333" loading="eager">
+      <picture>
+        <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/4687346/pexels-photo-4687346.jpeg?auto=compress&cs=tinysrgb&w=640&h=1150&fit=crop 640w, https://images.pexels.com/photos/4687346/pexels-photo-4687346.jpeg?auto=compress&cs=tinysrgb&w=960&h=1720&fit=crop 960w" sizes="100vw">
+        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=2000&q=80&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=640&q=80&auto=format&fit=crop 640w, https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=960&q=80&auto=format&fit=crop 960w, https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1400&q=80&auto=format&fit=crop 1400w, https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=2000&q=80&auto=format&fit=crop 2000w" sizes="100vw" referrerpolicy="no-referrer" alt="Consultório odontológico moderno com cadeira e equipamentos digitais" width="2000" height="1333" loading="eager">
+      </picture>
     </div>
     <div class="hero-overlay"></div>
     <div class="container">
