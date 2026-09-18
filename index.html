@@ -7,7 +7,7 @@
 <meta name="description" content="Dra. Deyseane Mendes, CRO-SP 153856: facetas em resina, porcelanas, estética dental, reabilitação oral, clareamento, botox e preenchimento labial no Carrão, São Paulo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --menta:#FFA4A4;
@@ -101,16 +101,6 @@
   .logo-text strong{font-size:18px;font-weight:800;letter-spacing:-.03em;color:var(--marinho);}
   .logo-subtitle{font-size:11px;font-weight:800;letter-spacing:.075em;text-transform:uppercase;color:#A77F78;}
   .logo-mark{width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--neutro-claro);}
-  .logo-mark img{width:100%;height:100%;object-fit:cover;}
-  .brand-mark{
-    background:#EFE7DD;
-    border:1px solid rgba(150,89,89,.14);
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.72),0 8px 20px rgba(75,44,44,.12);
-  }
-  .brand-monogram{
-    font:400 32px/1 'Great Vibes','Brush Script MT',cursive;
-    letter-spacing:-.14em;color:#A77F78;transform:translate(-2px,2px) rotate(-4deg);
-  }
   .logo-rounded-seal{
     width:50px;height:50px;border-radius:17px;overflow:hidden;background:#FFFFFF;
     border:1px solid #EBD1CC;position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,.82);
@@ -123,10 +113,6 @@
     font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;line-height:1;
     letter-spacing:-.16em;color:var(--marinho);transform:translate(-2px,-1px);
   }
-  .logo-image-mark{
-    width:56px;height:38px;border-radius:0;overflow:visible;background:transparent;
-  }
-  .logo-image-mark img{width:100%;height:100%;object-fit:contain;}
   .nav-links{display:flex;align-items:center;gap:36px;}
   .nav-links a{font:500 17px/30.6px 'Roboto',sans-serif;color:var(--marinho);transition:color .15s var(--ease);}
   .nav-links a:hover{color:var(--menta);}
@@ -165,11 +151,6 @@
   .hero-overlay{position:absolute;inset:0;z-index:-1;background:rgba(75,44,44,0.62);}
   .hero .container{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:end;width:100%;}
   .hero-content{color:#FFFFFF;max-width:940px;}
-  .hero-eyebrow{
-    display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:50px;
-    background:rgba(255,164,164,.16);color:var(--menta);
-    font:700 11.5px/1 'Manrope',sans-serif;letter-spacing:.09em;text-transform:uppercase;margin-bottom:28px;
-  }
   .hero h1{color:#FFFFFF;font-size:60px;line-height:63px;margin-bottom:24px;max-width:900px;}
   .hero-support{font:400 18px/30px 'Roboto',sans-serif;color:rgba(255,255,255,.82);max-width:520px;margin-bottom:32px;}
   .hero-info-card{
@@ -212,7 +193,7 @@
   .hero-actions .btn-secondary:hover{background:var(--menta);color:var(--marinho-profundo);border-color:var(--menta);}
   /* Marquee */
   .marquee-wrap{background:var(--marinho);overflow:hidden;padding:22px 0;}
-  .marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite;}
+  .marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite;will-change:transform;}
   .marquee-item{display:flex;align-items:center;gap:28px;padding:0 28px;font:500 15px/1 'Roboto',sans-serif;color:#FFFFFF;white-space:nowrap;}
   .marquee-item .sep{color:var(--menta);}
   @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
@@ -293,23 +274,6 @@
   .pro-list li{display:flex;gap:14px;align-items:flex-start;font-size:15px;line-height:1.6;color:var(--marinho);}
   .pro-list .check{margin-top:2px;}
 
-  /* Processo */
-  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;}
-  .process-grid::before{
-    content:'';position:absolute;top:28px;left:12.5%;right:12.5%;height:1px;
-    background-image:linear-gradient(to right,var(--borda-clara) 50%,transparent 50%);
-    background-size:12px 1px;z-index:0;
-  }
-  .process-step{position:relative;z-index:1;text-align:center;}
-  .process-num{
-    width:56px;height:56px;border-radius:50%;background:var(--verde-nevoa);color:var(--marinho);
-    display:flex;align-items:center;justify-content:center;font-family:'Manrope',sans-serif;font-weight:700;
-    font-size:20px;margin:0 auto 20px;border:1px solid var(--borda-clara);
-  }
-  .process-step.active .process-num{background:var(--menta);border-color:var(--menta);color:var(--marinho-profundo);}
-  .process-step h3{font-size:18px;margin-bottom:8px;}
-  .process-step p{font-size:14px;line-height:1.6;color:var(--texto-secundario);}
-
   /* Depoimentos */
   .test-wrap{background:var(--marinho);color:#FFFFFF;}
   .test-wrap .section-title{color:#FFFFFF;}
@@ -383,7 +347,7 @@
   .float-whatsapp svg{width:28px;height:28px;}
   .float-whatsapp::before{
     content:'';position:absolute;inset:-2px;border-radius:50%;border:2px solid var(--menta);background:transparent;
-    animation:pulse 2.4s var(--ease) infinite;z-index:-1;
+    animation:pulse 2.4s var(--ease) infinite;z-index:-1;will-change:transform,opacity;
   }
   @keyframes pulse{0%{transform:scale(1);opacity:.55;}100%{transform:scale(1.9);opacity:0;}}
 
@@ -417,8 +381,6 @@
     .about-media{width:100%;max-width:340px;margin-left:auto;margin-right:auto;}
     .pro-media{width:100%;max-width:340px;margin-left:auto;margin-right:auto;order:1;}
     .pro-info{order:2;}
-    .process-grid{grid-template-columns:repeat(2,1fr);row-gap:40px;}
-    .process-grid::before{display:none;}
     .test-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
   }
@@ -434,7 +396,6 @@
     .mobile-topbar-location{display:inline-flex;justify-content:flex-end;text-align:right;}
     .topbar-contact{display:none;}
     .navwrap{padding:12px 16px 0;}
-    #siteHeader.stuck .navwrap{padding-top:8px;}
     .navbar{
       width:100%;max-width:calc(100vw - 32px);gap:8px;border-radius:30px;
       padding:8px 8px 8px 14px;
@@ -450,7 +411,6 @@
     .logo-rounded-seal{width:40px;height:40px;border-radius:14px;}
     .logo-rounded-seal::after{left:11px;right:11px;bottom:8px;border-width:2px;}
     .logo-rounded-seal .logo-dm{font-size:27px;}
-    .logo-image-mark{width:46px;height:30px;}
     .hamburger{width:40px;height:40px;flex:0 0 40px;}
     .mobile-menu{width:min(360px,92vw);padding:24px 22px;}
     .mobile-menu a{font-size:20px;line-height:1.2;}
@@ -464,11 +424,10 @@
     .hero-overlay{background:linear-gradient(180deg,rgba(75,44,44,.74),rgba(75,44,44,.66) 45%,rgba(75,44,44,.72));}
     .hero .container{grid-template-columns:minmax(0,1fr);gap:26px;}
     .hero-content{min-width:0;width:100%;max-width:100%;}
-    .hero-eyebrow,.eyebrow{
+    .eyebrow{
       max-width:100%;white-space:normal;font-size:10.5px;line-height:1.45;
       letter-spacing:.08em;padding:7px 14px;
     }
-    .hero-eyebrow{margin-bottom:20px;}
     .hero h1{
       font-size:clamp(32px,9.2vw,38px);line-height:1.08;margin-bottom:18px;
       max-width:11ch;text-wrap:balance;
@@ -498,7 +457,7 @@
     .section-head.center .section-lead{margin-left:0;margin-right:0;}
     .section-title{font-size:clamp(28px,8vw,32px);line-height:1.12;margin-bottom:12px;text-wrap:balance;}
     .section-lead{font-size:15.5px;line-height:1.7;max-width:32ch;margin-bottom:0;}
-    .feature-grid,.treat-grid,.process-grid,.location-wrap{grid-template-columns:minmax(0,1fr);gap:16px;}
+    .feature-grid,.treat-grid,.location-wrap{grid-template-columns:minmax(0,1fr);gap:16px;}
     .feature-card,.treat-card{
       background:var(--rosa-card);border-color:var(--rosa-card-borda);
       box-shadow:0 18px 42px rgba(150,89,89,.08);
@@ -531,14 +490,6 @@
     .pro-cro{font-size:12px;margin-bottom:20px;}
     .pro-list{gap:14px;margin-bottom:26px;}
     .pro-list li{font-size:14.5px;line-height:1.58;}
-    .process-grid{row-gap:20px;}
-    .process-step{
-      display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:14px;
-      align-items:start;text-align:left;
-    }
-    .process-num{width:44px;height:44px;margin:0;grid-row:1 / span 2;font-size:17px;}
-    .process-step h3{font-size:17px;margin-bottom:5px;}
-    .process-step p{font-size:14px;}
     .test-card{border-radius:26px;padding:24px 20px;}
     .test-card p{font-size:15px;line-height:1.58;margin-bottom:20px;}
     .test-source{text-align:left;margin-top:28px;}
@@ -629,8 +580,8 @@
   <section class="hero" id="hero">
     <div class="hero-bg">
       <picture>
-        <source media="(max-width: 767px)" srcset="assets/images/dental-hero-patient-mobile-v7.png" type="image/png">
-        <img src="assets/images/dental-hero-patient-desktop-v4.png" sizes="100vw" alt="Paciente sorrindo em cadeira odontológica em consultório claro" width="1672" height="941" loading="eager">
+        <source media="(max-width: 767px)" srcset="assets/images/dental-hero-patient-mobile-v7-optimized.jpg" type="image/jpeg">
+        <img src="assets/images/dental-hero-patient-desktop-v4-optimized.jpg" sizes="100vw" alt="Paciente sorrindo em cadeira odontológica em consultório claro" width="1672" height="941" loading="eager" fetchpriority="high">
       </picture>
     </div>
     <div class="hero-overlay"></div>
@@ -701,11 +652,11 @@
         <p class="section-lead">Uma seleção dos principais cuidados oferecidos pela Dra. Deyseane Mendes em estética dental, reabilitação oral e procedimentos faciais.</p>
       </div>
       <div class="treat-grid">
-        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Facetas%20Dentais." target="_blank" rel="noopener" aria-label="Saber mais sobre Facetas Dentais pelo WhatsApp"><div class="treat-media"><img src="https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?w=900&q=80&auto=format&fit=crop" alt="Close-up de sorriso com dentes uniformes e claros" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">01</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span><h3>Facetas Dentais</h3><p>Facetas em resina composta ou porcelana para harmonizar forma, cor e proporção do sorriso.</p><span class="treat-link">Ver detalhes</span></div></a>
-        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Restaura%C3%A7%C3%A3o%20Est%C3%A9tica." target="_blank" rel="noopener" aria-label="Saber mais sobre Restauração Estética pelo WhatsApp"><div class="treat-media"><img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D768%2Ch%3D668%2Cfit%3Dcrop/t8PVpUdqxZJOoUpL/colored-filling1-6RJfNoqQEkFyNorU.jpg" alt="Close-up de restauração estética em resina com cor natural do dente" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">02</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-2.2 0-4 1.6-4 4.3 0 1.9.5 3.1 1.1 5 .5 1.6.9 4.3 1.1 6.1.1.8.8 1.3 1.4.8.6-.4.9-1.2 1.2-2.1.3.9.6 1.7 1.2 2.1.6.5 1.3 0 1.4-.8.2-1.8.6-4.5 1.1-6.1.6-1.9 1.1-3.1 1.1-5C16 5.6 14.2 4 12 4Z"></path></svg></span><h3>Restauração Estética</h3><p>Restaurações em resina composta para recuperar função, cor e naturalidade.</p><span class="treat-link">Ver detalhes</span></div></a>
-        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Coroa%20Dent%C3%A1ria." target="_blank" rel="noopener" aria-label="Saber mais sobre Coroa Dentária pelo WhatsApp"><div class="treat-media"><img src="https://allhealthandcare.co.uk/storage/articles/featured/dental-crowns-explained-types-costs-procedure-6a0b455d623c8.webp" alt="Modelo de coroa dentária em dente restaurado" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">03</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 13.5 9 19.5 10.5 13.5 12 12 18 10.5 12 4.5 10.5 10.5 9 Z"></path></svg></span><h3>Coroa Dentária</h3><p>Próteses e coroas para reconstruir dentes com segurança, estética e conforto.</p><span class="treat-link">Ver detalhes</span></div></a>
-        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Botox%20e%20Preenchimento." target="_blank" rel="noopener" aria-label="Saber mais sobre Botox e Preenchimento pelo WhatsApp"><div class="treat-media"><img src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?w=900&q=80&auto=format&fit=crop" alt="Procedimento facial estético em ambiente clínico" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">04</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span><h3>Botox e Preenchimento</h3><p>Toxina botulínica e preenchimento labial integrados ao cuidado estético facial.</p><span class="treat-link">Ver detalhes</span></div></a>
-        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Clareamento%20Dental." target="_blank" rel="noopener" aria-label="Saber mais sobre Clareamento Dental pelo WhatsApp"><div class="treat-media"><img src="https://beyonddent.shop/cdn/shop/products/SG08_1024x1024.jpg?v=1676410585" alt="Kit profissional de clareamento dental" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">05</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg></span><h3>Clareamento Dental</h3><p>Clareamento para realçar o sorriso com acompanhamento profissional.</p><span class="treat-link">Ver detalhes</span></div></a>
+        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Facetas%20Dentais." target="_blank" rel="noopener" aria-label="Saber mais sobre Facetas Dentais pelo WhatsApp"><div class="treat-media"><img src="assets/images/treatment-facetas.jpg" alt="Close-up de sorriso com dentes uniformes e claros" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">01</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span><h3>Facetas Dentais</h3><p>Facetas em resina composta ou porcelana para harmonizar forma, cor e proporção do sorriso.</p><span class="treat-link">Ver detalhes</span></div></a>
+        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Restaura%C3%A7%C3%A3o%20Est%C3%A9tica." target="_blank" rel="noopener" aria-label="Saber mais sobre Restauração Estética pelo WhatsApp"><div class="treat-media"><img src="assets/images/treatment-restauracao.jpg" alt="Close-up de restauração estética em resina com cor natural do dente" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">02</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-2.2 0-4 1.6-4 4.3 0 1.9.5 3.1 1.1 5 .5 1.6.9 4.3 1.1 6.1.1.8.8 1.3 1.4.8.6-.4.9-1.2 1.2-2.1.3.9.6 1.7 1.2 2.1.6.5 1.3 0 1.4-.8.2-1.8.6-4.5 1.1-6.1.6-1.9 1.1-3.1 1.1-5C16 5.6 14.2 4 12 4Z"></path></svg></span><h3>Restauração Estética</h3><p>Restaurações em resina composta para recuperar função, cor e naturalidade.</p><span class="treat-link">Ver detalhes</span></div></a>
+        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Coroa%20Dent%C3%A1ria." target="_blank" rel="noopener" aria-label="Saber mais sobre Coroa Dentária pelo WhatsApp"><div class="treat-media"><img src="assets/images/treatment-coroa.jpg" alt="Modelo de coroa dentária em dente restaurado" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">03</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 13.5 9 19.5 10.5 13.5 12 12 18 10.5 12 4.5 10.5 10.5 9 Z"></path></svg></span><h3>Coroa Dentária</h3><p>Próteses e coroas para reconstruir dentes com segurança, estética e conforto.</p><span class="treat-link">Ver detalhes</span></div></a>
+        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Botox%20e%20Preenchimento." target="_blank" rel="noopener" aria-label="Saber mais sobre Botox e Preenchimento pelo WhatsApp"><div class="treat-media"><img src="assets/images/treatment-facial.jpg" alt="Procedimento facial estético em ambiente clínico" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">04</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span><h3>Botox e Preenchimento</h3><p>Toxina botulínica e preenchimento labial integrados ao cuidado estético facial.</p><span class="treat-link">Ver detalhes</span></div></a>
+        <a class="treat-card reveal" href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Clareamento%20Dental." target="_blank" rel="noopener" aria-label="Saber mais sobre Clareamento Dental pelo WhatsApp"><div class="treat-media"><img src="assets/images/treatment-clareamento.jpg" alt="Kit profissional de clareamento dental" width="900" height="600" loading="lazy" decoding="async"><span class="treat-num">05</span></div><div class="treat-body"><span class="treat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg></span><h3>Clareamento Dental</h3><p>Clareamento para realçar o sorriso com acompanhamento profissional.</p><span class="treat-link">Ver detalhes</span></div></a>
       </div>
     </div>
   </section>
@@ -713,7 +664,7 @@
   <!-- SOBRE -->
   <section id="sobre">
     <div class="container about-grid">
-      <div class="about-media reveal"><img src="https://images.unsplash.com/photo-1667133295315-820bb6481730?w=1000&q=80&auto=format&fit=crop" alt="Consultório odontológico moderno e claro" width="1000" height="1250" loading="lazy" decoding="async"><div class="stat-badge"><div class="num">5,0</div><div class="label">nota média</div></div></div>
+      <div class="about-media reveal"><img src="assets/images/clinic-interior.jpg" alt="Consultório odontológico moderno e claro" width="1000" height="1250" loading="lazy" decoding="async"><div class="stat-badge"><div class="num">5,0</div><div class="label">nota média</div></div></div>
       <div class="about-text reveal"><span class="eyebrow">Sobre</span><h2 class="section-title">A clínica</h2><p>Sejam bem-vindos ao consultório da Dra. Deyseane Mendes, cirurgiã-dentista com atuação em estética dental, prótese e reabilitação oral.</p><blockquote>"Transformar o sorriso com técnica, naturalidade e um atendimento acolhedor."</blockquote><p>Localizada no Carrão, em São Paulo, a clínica reúne facetas em resina, porcelanas, restaurações, próteses, clareamento e procedimentos faciais em um só endereço.</p></div>
     </div>
   </section>
@@ -746,7 +697,7 @@
 
   <!-- LOCALIZAÇÃO -->
   <section class="support">
-    <div class="container"><div class="section-head reveal"><span class="eyebrow">Localização</span><h2 class="section-title">Fácil de encontrar no Carrão</h2></div><div class="location-wrap"><div class="location-info reveal"><p>O consultório fica na Rua Serra de Botucatu, no Carrão, região Tatuapé/Carrão em São Paulo.</p><div class="location-rows"><div class="location-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>R. Serra de Botucatu, 1414 - Sala 02, Carrão, São Paulo - SP, 03317-000</span></div><div class="location-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(11) 97032-7349 · WhatsApp</span></div></div><div class="location-actions"><a href="https://www.google.com/maps/dir/?api=1&destination=R.%20Serra%20de%20Botucatu%2C%201414%20-%20Sala%2002%2C%20Carr%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003317-000" class="btn btn-primary" target="_blank" rel="noopener">Como chegar</a><a href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Deyseane%20Mendes." class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp</a></div></div><div class="location-map reveal"><iframe src="https://www.google.com/maps?q=R.%20Serra%20de%20Botucatu%2C%201414%20-%20Sala%2002%2C%20Carr%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003317-000&output=embed" title="Mapa com a localização da Dra. Deyseane Mendes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div></div>
+    <div class="container"><div class="section-head reveal"><span class="eyebrow">Localização</span><h2 class="section-title">Fácil de encontrar no Carrão</h2></div><div class="location-wrap"><div class="location-info reveal"><p>O consultório fica na Rua Serra de Botucatu, no Carrão, região Tatuapé/Carrão em São Paulo.</p><div class="location-rows"><div class="location-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>R. Serra de Botucatu, 1414 - Sala 02, Carrão, São Paulo - SP, 03317-000</span></div><div class="location-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(11) 97032-7349 · WhatsApp</span></div></div><div class="location-actions"><a href="https://www.google.com/maps/dir/?api=1&destination=R.%20Serra%20de%20Botucatu%2C%201414%20-%20Sala%2002%2C%20Carr%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003317-000" class="btn btn-primary" target="_blank" rel="noopener">Como chegar</a><a href="https://wa.me/5511970327349?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Deyseane%20Mendes." class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp</a></div></div><div class="location-map reveal"><iframe data-src="https://www.google.com/maps?q=R.%20Serra%20de%20Botucatu%2C%201414%20-%20Sala%2002%2C%20Carr%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003317-000&output=embed" title="Mapa com a localização da Dra. Deyseane Mendes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div></div>
   </section>
 
   <!-- FAQ -->
@@ -837,6 +788,21 @@
       }
     });
   });
+
+  // Load the embedded map away from the first scroll path.
+  var mapFrame = document.querySelector('.location-map iframe[data-src]');
+  if(mapFrame){
+    var loadMap = function(){
+      if(!mapFrame.src){
+        mapFrame.src = mapFrame.getAttribute('data-src');
+      }
+    };
+    if('requestIdleCallback' in window){
+      requestIdleCallback(loadMap, {timeout:2000});
+    } else {
+      setTimeout(loadMap, 1200);
+    }
+  }
 
   // Reveal on scroll
   if('IntersectionObserver' in window && !reduceMotion){
