@@ -23,6 +23,7 @@ Rodada aplicada depois da limpeza:
 - Trocar imagens remotas dos cards e da secao sobre por arquivos locais otimizados.
 - Manter apenas animacoes permanentes pequenas com composicao (`will-change`) no marquee e no pulso do WhatsApp.
 - Adiar o carregamento do iframe do Google Maps para um momento ocioso do navegador.
+- Reintroduzir Lenis depois da remocao dos efeitos caros de pintura, com configuracao leve e fallback para scroll nativo.
 
 Conclusao provisoria:
 
